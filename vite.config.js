@@ -3,11 +3,13 @@ import react from '@vitejs/plugin-react'
 import { VitePWA } from 'vite-plugin-pwa'
 
 const manifest = {
+  includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'meet-app-192.png','meet-app-144.png','meet-app-512.png'],
   registerType: "prompt",
   manifest: {
     name: "Test PWA",
     short_name: "Test PWA",
     description: "An app",
+    theme_color: '#ffffff',
     icons: [
       
       {
